@@ -1,0 +1,10 @@
+{
+    "gimgDatas":[
+        {
+            "good1": {
+                "imgUrl":"./img/good_3_1.jpg"
+             }
+        }
+    ],
+    "status": 200
+}

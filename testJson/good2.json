@@ -1,0 +1,30 @@
+{
+    "mid2Datas3":[
+        {
+            "good1": {
+                "toUrl":"./gooditem.html",
+                "imgUrl":"./img/good_3_1.jpg",
+                "price":"¥ 2590.83",
+                "newsSimple":"【模型周边】游戏王 三幻神 奥西里斯的天空龙 正品 收藏 装饰 内奸龙"
+             }
+        },
+        {
+            "good1": {
+                "toUrl":"./buffer.html",
+                "imgUrl":"./img/good_3_2.jpg",
+                "price":"¥ 63.50",
+                "newsSimple":"【周边饰品】千年积木 吊坠 武藤游戏 游戏王 镀金 装饰 礼物"
+             }
+        },
+        {
+            "good1": {
+                "toUrl":"./buffer.html",
+                "imgUrl":"./img/good_3_3.jpg",
+                "price":"¥ 168.18",
+                "newsSimple":"【周边模型】黑魔导女孩 游戏王 模型 正品 收藏 装饰 手办 "
+             }
+        }
+        
+    ],
+    "status": 200
+}

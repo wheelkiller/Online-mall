@@ -1,0 +1,14 @@
+{
+    "gtext1Datas":[
+        {
+            "good1": {
+                "allprice":"全款： ¥89 ",
+                "fprice":"定金：无需定金",
+                "sendaddr":"发货地： 中国福建省莆田市城厢区龙桥街道1133号",
+                "mj":"卖家： KaiBa corporation",
+                "porducer":"出厂公司： 新童野市海马制造有限公司"
+             }
+        }
+    ],
+    "status": 200
+}

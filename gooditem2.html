@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./swiper8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/style2-2.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./swiper8/swiper-bundle.min.js"></script>
+    <script src="./js/vue.js"></script>
+    <title>商品详情</title>
+</head>
+<body>
+    <div id="gd">
+        <div class="top-q">
+            <div class="top-q_0">
+                <a href="#r-bottom1">前往底部</a>
+            </div>
+            <div class="top-q_1">
+                <form class="s" method="get" action="https://www.jd.com/s" target="_blank">
+                    <input type="text">
+                    <button class="b1" type="submit">搜索</button>
+                </form>
+            </div>
+            <div class="top-q_2">
+                <a href="#g">商 品 介 绍</a>
+                <span>|</span>
+                <a href="#xq">商 品 详 情</a>
+                <span>|</span>
+                <a href="#pl">商 品 评 论</a>
+                <span>|</span>
+                <a href="#gg2">广 告 插 入</a>
+                <span>|</span>
+                <a href="https://ygodl.com/" target="_blank">新 人 入 门</a>
+                <span>|</span>
+                <button class="FAQ" onclick="FAQ()">在 线 客 服</button>
+            </div>
+        </div>
+        <div id="g">
+            <div class="gd_img"v-for="(item,index) in gimg2Datas" :key="item.headName">
+                <img class="img3":src="item.good1.imgUrl">
+            </div>
+            <div class="g_text" >
+                <div class="g_title">【决斗卡垫】灰流丽 妹卡 卡垫 游戏王 高人气 手坑 官方正品 </div>
+                <div class="g_infomation" style="flex: 1;overflow: hidden;" 
+                         v-for="(item,index) in gtext2Datas" :key="item.headName">
+                        <div>
+                            <p class="allprice">{{item.good1.allprice}}</p>
+                            <p class="fprice">{{item.good1.fprice}}</p>
+                            <p class="sendaddr">{{item.good1.sendaddr}}</p>
+                            <p class="mj">{{item.good1.mj}}</p>
+                            <p class="porducer">{{item.good1.porducer}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="size">
+        <span> 类型选择：</span>
+        <button class="bt">类型1（单人粉色）</button>
+        <button class="bt">类型2（茶会橙色）</button>
+    </div>
+        <div class="g_b">
+            <button class="b_b" onclick="Tips1()">购  买 </button>
+            <button class="b_car" onclick="Tips2()">加入购物车</button>
+        </div>
+        <div class="g_xq">
+            <div id="xq_title">
+                <p id="xq">☆ ☆ ☆</p>
+                <p id="tit">商 品 详 情 图 片</p>
+            </div>
+            <img class="gdi1" src="./gdi/0201.jpg">
+            <img class="gdi2" src="./gdi/0202.jpg">
+            <img class="gdi3" src="./gdi/0203.jpg">
+            <img class="gdi4" src="./gdi/0204.jpg">
+        </div>
+        <div class="g_pl-1">
+            <p id="pl">☆ ☆ ☆</p>
+            <p id="tit">商 品 评 论</p>
+            <input id="pl_0" type="text"  placeholder="这是一个评论输入框，但是很遗憾这个功能还未开放"  readonly>
+            <button onclick="fb()">发表</button>
+            <div>
+                <div>
+                    <img src="./img/QQ截图20220611224700.jpg">
+                    <span id="pl_1">小心灰流丽</span>
+                </div>
+                <div>
+                    <img src="./img/不动游星.png">
+                    <span id="pl_1">这个卡垫，让我想起不好的回忆</span>
+                </div>
+                <div>
+                    <img src="./img/脚心黑.jpg">
+                    <span id="pl_1">卡垫很漂亮，手感也很好</span>
+                </div>
+            </div>
+        </div>
+        <div class="gg2-1">
+            <p id="gg2">☆ ☆ ☆</p>
+            <p id="tit">这 是 广 告</p>
+            <a href="https://baike.baidu.com/item/%E6%B5%B7%E9%A9%AC%E5%85%AC%E5%8F%B8%E6%9D%AF/56552466?fr=aladdin" target="_blank">
+                <img src="./img/QQ截图20220611144131.jpg">
+            </a>
+            
+        </div>
+        <div id="r-bottom1"></div>
+
+</body>
+<script>
+
+var btn = document.getElementsByClassName("bt");
+    for (var i = 0 ; i<btn.length; i++){
+        btn[i].onclick=function(){
+        for(var i = 0; i<btn.length; i++){
+            btn[i].style.backgroundColor="";
+        }
+        this.style.backgroundColor="#f73535";
+    }
+}
+
+/*$(function(){
+  $('.bt').click(function(){
+   $(this).css('background','rgb(119, 148, 53)');
+   $(this).siblings('button').css('background','');
+  });
+})*/
+
+function Tips1(){
+    alert('暂时无法购买');
+}
+
+function Tips2(){
+    alert('加入购物车成功，但是没有购物车');
+}
+
+function FAQ(){
+    alert('详情请QQ联系24小时在线人工客服  QQ号：2747903375 QQ群：8301332865')
+}
+
+function fb(){
+    alert('该功能暂未开放')
+}
+
+
+
+
+
+
+
+    var app = new Vue({
+        el:"#gd",
+        data:{
+            tabsDatas : [
+                {
+                    name: "",
+                    values: [
+                        {
+                            k:"",
+                            url:""
+                        }
+                    ],
+                    href:"",
+                    isShow: false
+                }
+            ],
+            gtext2Datas: [],
+            gimg2Datas: [],
+
+        },
+        methods:{
+            getgtext2Data:function(){
+                var self = this;
+                //请求tabs
+                $.ajax({
+                    type: "GET",
+                    url: "./testJson/gtext2.json",
+                    data: "",
+                    dataType: "json",
+                    success: function (response) {
+                        for (let index = 0; index < response.gtext2Datas.length; index++) {
+                            self.$set(self.gtext2Datas, index, response.gtext2Datas[index]);
+                        }
+
+                    }
+                });
+            },
+            getgimg2Data:function(){
+                var self = this;
+                //请求tabs
+                $.ajax({
+                    type: "GET",
+                    url: "./testJson/gimg2.json",
+                    data: "",
+                    dataType: "json",
+                    success: function (response) {
+                        for (let index = 0; index < response.gimg2Datas.length; index++) {
+                            self.$set(self.gimg2Datas, index, response.gimg2Datas[index]);
+                        }
+
+                    }
+                });
+            },
+        },
+        created:function() {
+            this.getgtext2Data();
+            this.getgimg2Data();
+        }
+    });
+</script>
+
+</html>

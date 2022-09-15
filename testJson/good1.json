@@ -1,0 +1,30 @@
+{
+    "mid2Datas2":[
+        {
+            "good1": {
+                "toUrl":"./buffer.html",
+                "imgUrl":"./img/good_2_1.jpg",
+                "price":"¥ 2500.83",
+                "newsSimple":"【青眼卡组】青眼白龙 元老卡组 海马濑人 龙卡 魂卡 游戏王 黑暗游戏"
+             }
+        },
+        {
+            "good1": {
+                "toUrl":"./buffer.html",
+                "imgUrl":"./img/good_2_2.jpg",
+                "price":"¥ 1550.77",
+                "newsSimple":"【同调卡组】星尘龙 不动游星 同调卡组 游戏王 5D's 加速同调 魂卡"
+             }
+        },
+        {
+            "good1": {
+                "toUrl":"./buffer.html",
+                "imgUrl":"./img/good_2_3.jpg",
+                "price":"¥ 1320.39",
+                "newsSimple":"【连接卡组】link 游戏王 虫惑魔 蟲惑魔 重坑 妹卡 植物族"
+             }
+        }
+        
+    ],
+    "status": 200
+}

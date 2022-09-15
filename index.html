@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./swiper8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/style2-2.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./swiper8/swiper-bundle.min.js"></script>
+    <script src="./js/vue.js"></script>
+    <title>牌佬线上商城(内部测试版)</title>
+</head>
+<body>
+<div id="store">
+    <div class="top-q">
+        <div class="top-q_0">
+            <a href="#r-bottom">前往底部</a>
+        </div>
+        <div class="top-q_1">
+            <form class="s" method="get" action="https://www.jd.com/s" target="_blank">
+                <input type="text">
+                <button class="b1" type="submit">搜索</button>
+            </form>
+        </div>
+        <div class="top-q_2">
+            <a href="#good_1_type">服 装 服 饰</a>
+            <span>|</span>
+            <a href="#good_2_type">卡 组 卡 包</a>
+            <span>|</span>
+            <a href="#good_3_type">模 型 周 边</a>
+            <span>|</span>
+            <a href="#good_4_type">卡 垫 卡 套</a>
+            <span>|</span>
+            <a href="https://ygodl.com/" target="_blank">新 人 入 门</a>
+            <span>|</span>
+            <button class="FAQ" onclick="FAQ()">在 线 客 服</button>
+        </div>
+    </div>
+    <div class= mid style="padding-top: 40px; ">
+        <div class="swiper01">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" v-for="(item,index) in swiper01datas">
+                    <a href="./buffer swipwe.html" target="_blank">
+                        <img class= "img1" v-bind:src="item" alt="">
+                    </a>
+                </div>
+            </div>
+        <!-- 导航按钮 -->
+            <div class="swiper-button-next01"></div>
+            <div class="swiper-button-prev01"></div>
+        <!-- 滚动条 -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+        <!-- 分页器 -->
+        <div class="swiper-pagination01"></div>
+    </div>
+    <div class="good">
+        <div class="good_1">
+            <div id="good_1_type">
+                 服☆装☆服☆饰 
+            </div>
+                <div class="div2" style="display:flex;">
+                    <div class="div2_1" style="flex: 1;overflow: hidden;" 
+                         v-for="(item,index) in mid2Datas1" :key="item.headName">
+                        <div class="good_1_xq">
+                                <a v-bind:href="item.good1.toUrl" target="_blank">
+                                    <img class="img2" :src="item.good1.imgUrl">
+                                    <p class="ttm">{{item.good1.newsSimple}}</p>
+                                    <p class="price">{{item.good1.price}}</p>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="good_2">
+            <div id="good_2_type">
+                卡☆组☆卡☆包 
+            </div>   
+                <div class="div2" style="display:flex;">
+                    <div class="div2_1" style="flex: 1;overflow: hidden;" 
+                         v-for="(item,index) in mid2Datas2" :key="item.headName">
+                        <div class="good_2_xq">
+                                <a v-bind:href="item.good1.toUrl" target="_blank">
+                                    <img class="img2" :src="item.good1.imgUrl">
+                                    <p class="ttm">{{item.good1.newsSimple}}</p>
+                                    <p class="price">{{item.good1.price}}</p>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="good_3">
+            <div id="good_3_type">
+                模☆型☆周☆边 
+            </div>   
+                <div class="div2" style="display:flex;">
+                    <div class="div2_1" style="flex: 1;overflow: hidden;" 
+                         v-for="(item,index) in mid2Datas3" :key="item.headName">
+                        <div class="good_3_xq">
+                                <a v-bind:href="item.good1.toUrl" target="_blank">
+                                    <img class="img2" :src="item.good1.imgUrl">
+                                    <p class="ttm">{{item.good1.newsSimple}}</p>
+                                    <p class="price">{{item.good1.price}}</p>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="good_4">
+            <div id="good_4_type">
+                卡☆垫☆卡☆套 
+            </div>   
+                <div class="div2" style="display:flex;">
+                    <div class="div2_1" style="flex: 1;overflow: hidden;" 
+                         v-for="(item,index) in mid2Datas4" :key="item.headName">
+                        <div class="good_4_xq">
+                                <a v-bind:href="item.good1.toUrl" target="_blank">
+                                    <img class="img2" :src="item.good1.imgUrl">
+                                    <p class="ttm">{{item.good1.newsSimple}}</p>
+                                    <p class="price">{{item.good1.price}}</p>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+    </div>
+    <div class="gg">
+        <a href="http://www.baidu.com">
+            <img class ="gg_img" src="./img/zhaozu.jpg">
+            <div>我是广告位啊</div>
+            <div>我现在遇到一些很坏很坏的人</div>
+            <div>V信转我300块，帮我挂上图片</div>
+            <div>向你致敬啊，salute</div>
+            <div>（广告位招租）</div>
+        </a>
+    </div>
+    <div id="r-bottom">.</div>
+    <div id="bottom">
+        <div class="bottom_0">
+            <a href="#store">前往顶部</a>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+
+function FAQ(){
+    alert('详情请QQ联系24小时在线人工客服  QQ号：2747903375 QQ群：8301332865')
+}
+
+
+    var app = new Vue({
+        el:"#store",
+        data:{
+            tabsDatas : [
+                {
+                    name: "",
+                    values: [
+                        {
+                            k:"",
+                            url:""
+                        }
+                    ],
+                    href:"",
+                    isShow: false
+                }
+            ],
+            mySwiper: null,
+            swiper01datas:[],
+            mid2Datas1: [],
+            mid2Datas2: [],
+            mid2Datas3: [],
+            mid2Datas4: []
+
+        },
+        methods: {
+            initSwiper01Option:function(){
+                this.mySwiper = new Swiper ('.swiper01', {
+                    //slidesPerView: 1,
+                    //centeredSlides: true,
+                    //spaceBetween:,
+                    loop:true,
+                    autoplay:true,
+                    //observer: true,
+                    //observeParents: true,
+                    //init:false,
+                    navigation: {
+                        nextEl: '.swiper-button-next01',
+                        prevEl: '.swiper-button-prev01',
+                    },
+                    pagination: {
+                        el: '.swiper-pagination01',
+                        type: 'fraction',
+                    },        
+                });
+            },
+
+
+
+            getSwiper1Datas:function(){
+                var self = this;
+                $.ajax({
+                    type: "GET",
+                    url: "./testJson/swiper.json",
+                    data: "",
+                    dataType: "json",
+                    success: function (response) {
+                        let vs = response.swiperDatas;
+                        for (let index = 0; index < vs.length; index++) {
+                            self.swiper01datas.push(vs[index]); 
+                        }
+                        self.$nextTick(self.initSwiper01Option);
+                    }
+                 });
+            },
+
+            getMid2Data1:function(){
+                var self = this;
+                //请求tabs
+                $.ajax({
+                    type: "GET",
+                    url: "./testJson/good.json",
+                    data: "",
+                    dataType: "json",
+                    success: function (response) {
+                        for (let index = 0; index < response.mid2Datas1.length; index++) {
+                            self.$set(self.mid2Datas1, index, response.mid2Datas1[index]);
+                        }
+
+                    }
+                });
+            },
+            getMid2Data2:function(){
+                var self = this;
+                //请求tabs
+                $.ajax({
+                    type: "GET",
+                    url: "./testJson/good1.json",
+                    data: "",
+                    dataType: "json",
+                    success: function (response) {
+                        for (let index = 0; index < response.mid2Datas2.length; index++) {
+                            self.$set(self.mid2Datas2, index, response.mid2Datas2[index]);
+                        }
+
+                    }
+                });
+            },
+            getMid2Data3:function(){
+                var self = this;
+                //请求tabs
+                $.ajax({
+                    type: "GET",
+                    url: "./testJson/good2.json",
+                    data: "",
+                    dataType: "json",
+                    success: function (response) {
+                        for (let index = 0; index < response.mid2Datas3.length; index++) {
+                            self.$set(self.mid2Datas3, index, response.mid2Datas3[index]);
+                        }
+
+                    }
+                });
+            },
+            getMid2Data4:function(){
+                var self = this;
+                //请求tabs
+                $.ajax({
+                    type: "GET",
+                    url: "./testJson/good3.json",
+                    data: "",
+                    dataType: "json",
+                    success: function (response) {
+                        for (let index = 0; index < response.mid2Datas4.length; index++) {
+                            self.$set(self.mid2Datas4, index, response.mid2Datas4[index]);
+                        }
+
+                    }
+                });
+            },
+        },
+        created:function() {
+            this.getMid2Data1();
+            this.getMid2Data2();
+            this.getMid2Data3();
+            this.getMid2Data4();
+        },
+        mounted:function(){
+            this.getSwiper1Datas();
+        },
+
+
+
+
+    });
+</script>
+</html>

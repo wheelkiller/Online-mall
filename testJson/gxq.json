@@ -1,0 +1,46 @@
+{
+    "gxqDatas":[
+        {
+            "good1": {
+                "imgUrl":"./gdi/01.jpg"
+                
+             }
+            },
+        {
+             "good1":{
+                "imgUrl":"./gdi/02.jpg"
+             }
+        },
+        {
+            "good1":{
+               "imgUrl":"./gdi/03.jpg"
+            }
+       },
+       {
+        "good1":{
+           "imgUrl":"./gdi/04.jpg"
+        }
+   },
+   {
+    "good1":{
+       "imgUrl":"./gdi/05.jpg"
+    }
+    },
+    {
+        "good1":{
+        "imgUrl":"./gdi/06.jpg"
+        }
+    },
+    {
+        "good1":{
+        "imgUrl":"./gdi/07.jpg"
+        }
+    },
+    {
+        "good1":{
+        "imgUrl":"./gdi/08.jpg"
+        }
+    }
+    ],
+    "status": 200
+}

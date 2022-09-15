@@ -1,0 +1,30 @@
+{
+    "mid2Datas4":[
+        {
+            "good1": {
+                "toUrl":"./buffer2.html",
+                "imgUrl":"./img/good_4_1.jpg",
+                "price":"¥ 100.00",
+                "newsSimple":"【卡组卡套】闪刀姬 半龙女仆 小蓝露世 卡套 龙骑士 妹卡 游戏王"
+             }
+        },
+        {
+            "good1": {
+                "toUrl":"./gooditem2.html",
+                "imgUrl":"./img/good_4_2.jpg",
+                "price":"¥ 128.23",
+                "newsSimple":"【决斗卡垫】灰流丽 妹卡 卡垫 游戏王 高人气 手坑 官方正品"
+             }
+        },
+        {
+            "good1": {
+                "toUrl":"./buffer2.html",
+                "imgUrl":"./img/good_4_3.jpg",
+                "price":"¥ 68.00",
+                "newsSimple":"【卡组收纳盒】红黑格纹 游戏王 收纳套 收纳盒 卡套 帆布"
+             }
+        }
+        
+    ],
+    "status": 200
+}

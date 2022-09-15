@@ -1,0 +1,30 @@
+{
+    "mid2Datas1":[
+        {
+            "good1": {
+                "toUrl":"./gooditem1.html",
+                "imgUrl":"./img/good_1_1.jpg",
+                "price":"¥ 89",
+                "newsSimple":"【质量好】黑色T恤 游戏王 5D's 男装女装 不动游星"
+             }
+        },
+        {
+            "good1": {
+                "toUrl":"./buffer1.html",
+                "imgUrl":"./img/good_1_2.jpg",
+                "price":"¥ 109",
+                "newsSimple":"【质量好】牛仔夹克衫 百搭 外套 牌佬 Duel"
+             }
+        },
+        {
+            "good1": {
+                "toUrl":"./buffer1.html",
+                "imgUrl":"./img/good_1_3.jpg",
+                "price":"¥ 107.99",
+                "newsSimple":"【超实惠】2022夏季深蓝色学生运动裤 牌佬 决斗 Duel"
+             }
+        }
+        
+    ],
+    "status": 200
+}
